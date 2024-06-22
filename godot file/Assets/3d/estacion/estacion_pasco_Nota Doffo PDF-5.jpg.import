@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4k6x8i07e1hm"
+uid="uid://owa3t00qx0dc"
 path.s3tc="res://.godot/imported/estacion_pasco_Nota Doffo PDF-5.jpg-324da571b0cc055b2c28972468c20d75.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_Nota Doffo PDF-5.jpg-324da571b0cc055b2c28972468c20d75.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "15a056b1af18a7995d948943a935032c"
+}
 
 [deps]
 

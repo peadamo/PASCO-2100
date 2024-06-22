@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u5n57650pqqc"
+uid="uid://clp4u5p452vuj"
 path.s3tc="res://.godot/imported/vagones_NOT WELCOMW.png-084b42561083cd2236b89a7d33062b81.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_NOT WELCOMW.png-084b42561083cd2236b89a7d33062b81.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "cbfb3da0fe4d7097ffbda96d411a13f9"
+}
 
 [deps]
 

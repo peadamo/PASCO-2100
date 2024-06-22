@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beuatw5nqig7m"
+uid="uid://cakl8x81wkjjt"
 path.s3tc="res://.godot/imported/vagones_529720de183692972c23a54faf33c278808de9d2.jpg-387069248a56f9b0a84b72e84c246de9.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_529720de183692972c23a54faf33c278808de9d2.jpg-387069248a56f9b0a84b72e84c246de9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "0495480cd54c8e985b1c47bf8597799e"
+}
 
 [deps]
 

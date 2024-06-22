@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b36u1cw18mchv"
+path="res://.godot/imported/alarma puertas tren.mp3-1b48d1efd55cd1f427ce6214c546fbec.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/tren/alarma puertas tren.mp3"
+dest_files=["res://.godot/imported/alarma puertas tren.mp3-1b48d1efd55cd1f427ce6214c546fbec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

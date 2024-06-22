@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rq1ysre81jsn"
+uid="uid://day5l6byx5k2j"
 path.s3tc="res://.godot/imported/estacion_pasco_Tiles107_1K-JPG_Color.jpg-30bb6d7160927753fad18c86fcc50e86.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_Tiles107_1K-JPG_Color.jpg-30bb6d7160927753fad18c86fcc50e86.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "9f5e78a59357c7ed6d350e09179d238a"
+}
 
 [deps]
 

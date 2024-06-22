@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnu2ljlh63tue"
+uid="uid://drylutgupa78p"
 path.s3tc="res://.godot/imported/estacion_pasco_pintura venegrarde.jpg-4de6ddbba11ce368f186f1a28b0c0be2.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_pintura venegrarde.jpg-4de6ddbba11ce368f186f1a28b0c0be2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "ac4b7218aac11d793ab3e336ff49703a"
+}
 
 [deps]
 

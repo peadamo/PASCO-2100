@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b64wmdrougrf1"
+uid="uid://decat3hiw26t4"
 path.s3tc="res://.godot/imported/vagones_Old white plastic_BaseColor.jpg-9594767b17c146131d8b7ca7097789e4.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_Old white plastic_BaseColor.jpg-9594767b17c146131d8b7ca7097789e4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "5b531dd91223b31c41a603b11768dbcc"
+}
 
 [deps]
 

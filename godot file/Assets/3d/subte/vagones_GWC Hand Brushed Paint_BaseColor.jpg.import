@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y1vhkcu8lxy0"
+uid="uid://c656e5ri5vahy"
 path.s3tc="res://.godot/imported/vagones_GWC Hand Brushed Paint_BaseColor.jpg-1663d7825738b32c36a83ddb250ba1a2.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_GWC Hand Brushed Paint_BaseColor.jpg-1663d7825738b32c36a83ddb250ba1a2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "e353ba7a0230b3d2f60d34d0f85608a4"
+}
 
 [deps]
 

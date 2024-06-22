@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chcpyp0s0pktl"
+uid="uid://c1qexr64ex6hu"
 path.s3tc="res://.godot/imported/estacion_pasco_cartel_pastco numero.png-1a8721bd07754fc111ef7d5a41085f35.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_cartel_pastco numero.png-1a8721bd07754fc111ef7d5a41085f35.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "1cbc6381e03246332fcfaa8c55c04272"
+}
 
 [deps]
 

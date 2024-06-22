@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d28dwfyrjf3p5"
+uid="uid://coiwx2rjcesxs"
 path.s3tc="res://.godot/imported/estacion_pasco_baldosa_ciegos linea.jpg-7af33cae3aabd68de2a43f89eea75c09.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_baldosa_ciegos linea.jpg-7af33cae3aabd68de2a43f89eea75c09.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "36a35722e7d513c1ddb50104aa86b119"
+}
 
 [deps]
 

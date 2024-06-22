@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cni2w88p46ggy"
+uid="uid://bs2ex663u8f1l"
 path.s3tc="res://.godot/imported/base_human_skin-7_diffuse.jpg-f07d8d2e752064ff85a6861bfcc214a9.s3tc.ctex"
 path.etc2="res://.godot/imported/base_human_skin-7_diffuse.jpg-f07d8d2e752064ff85a6861bfcc214a9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "05323afb6c691869ca4edfc8d1e96815"
+}
 
 [deps]
 

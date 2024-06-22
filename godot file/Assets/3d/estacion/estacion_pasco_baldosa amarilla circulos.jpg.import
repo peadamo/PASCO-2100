@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxhl7ch46srk8"
+uid="uid://bh54aunvtstdw"
 path.s3tc="res://.godot/imported/estacion_pasco_baldosa amarilla circulos.jpg-46bab3bca8b3f0903d9f644045cd902b.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_baldosa amarilla circulos.jpg-46bab3bca8b3f0903d9f644045cd902b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "c74e42838772df0be4f0024637df8c90"
+}
 
 [deps]
 

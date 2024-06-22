@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cls7to31w6j8d"
+uid="uid://6pwpfq8w472w"
 path.s3tc="res://.godot/imported/subte_CABINA_SAN PEDROT.png-be1047141d88fc34c911bf89c53e13d0.s3tc.ctex"
 path.etc2="res://.godot/imported/subte_CABINA_SAN PEDROT.png-be1047141d88fc34c911bf89c53e13d0.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "aa84baf57964c8f377c59c7157679252"
+}
 
 [deps]
 

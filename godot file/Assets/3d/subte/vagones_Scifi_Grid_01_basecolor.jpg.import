@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xsbsytn0upmx"
+uid="uid://dn610i78ygc3l"
 path.s3tc="res://.godot/imported/vagones_Scifi_Grid_01_basecolor.jpg-24761a2212d52ae668e2351a2e9bcd62.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_Scifi_Grid_01_basecolor.jpg-24761a2212d52ae668e2351a2e9bcd62.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "6f3bef0b7ddffef4f5f32f7cf98326ce"
+}
 
 [deps]
 

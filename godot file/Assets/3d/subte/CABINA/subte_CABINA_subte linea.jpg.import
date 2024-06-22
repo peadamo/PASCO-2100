@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhsa6dl6r3jpu"
+uid="uid://c08gg5ghatas6"
 path.s3tc="res://.godot/imported/subte_CABINA_subte linea.jpg-a1b0d04c6f794d50d2e557d49666408e.s3tc.ctex"
 path.etc2="res://.godot/imported/subte_CABINA_subte linea.jpg-a1b0d04c6f794d50d2e557d49666408e.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "7f04e2be4b8f6fb54f738eb3c41c21a5"
+}
 
 [deps]
 

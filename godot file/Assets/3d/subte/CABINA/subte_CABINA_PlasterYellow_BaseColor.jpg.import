@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv6d2m3rxp6gs"
+uid="uid://bfl1ik4311gwi"
 path.s3tc="res://.godot/imported/subte_CABINA_PlasterYellow_BaseColor.jpg-ae083a94d4bb57c9769bc9163e938b44.s3tc.ctex"
 path.etc2="res://.godot/imported/subte_CABINA_PlasterYellow_BaseColor.jpg-ae083a94d4bb57c9769bc9163e938b44.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "332e7c3d10a9498857ce398054a43e65"
+}
 
 [deps]
 

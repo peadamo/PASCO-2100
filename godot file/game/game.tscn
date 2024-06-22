@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bylleynve2flp"]
+[gd_scene load_steps=28 format=3 uid="uid://bylleynve2flp"]
 
 [ext_resource type="Script" path="res://game/game.gd" id="1_6j0nq"]
 [ext_resource type="PackedScene" uid="uid://b2rghjrirors" path="res://Assets/3d/estacion/estacion_pasco.tscn" id="1_qelwn"]
@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://cb0d2h431pbri" path="res://Assets/MONSTERS/JASON.glb" id="13_1wnfs"]
 [ext_resource type="Script" path="res://Assets/MONSTERS/JASON.gd" id="14_776k7"]
 [ext_resource type="Script" path="res://game/tren_del_anden.gd" id="15_ik7jo"]
+[ext_resource type="AudioStream" uid="uid://b36u1cw18mchv" path="res://Assets/sounds/tren/alarma puertas tren.mp3" id="16_qcbuj"]
+[ext_resource type="AudioStream" uid="uid://cyshrkvorx8d1" path="res://Assets/sounds/tren/tern entrando.mp3" id="17_opdc0"]
+[ext_resource type="AudioStream" uid="uid://da2u83pjg8rpr" path="res://Assets/sounds/tren/tren saliendo.mp3" id="18_hrnbe"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1fy7s"]
 size = Vector3(272.451, 1, 754.79)
@@ -115,24 +118,6 @@ point_count = 7
 [sub_resource type="SphereShape3D" id="SphereShape3D_mk6yx"]
 radius = 0.51029
 
-[sub_resource type="Animation" id="Animation_e7w78"]
-resource_name = "arrive_station"
-length = 22.0
-loop_mode = 1
-step = 1.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("subte:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 10, 12, 22),
-"transitions": PackedFloat32Array(0.353554, 8.28212, 2.82843, 2),
-"update": 0,
-"values": [Vector3(0, 0, -353.545), Vector3(0, 0, 45.9984), Vector3(0, 0, 45.9984), Vector3(0, 0, 430.081)]
-}
-
 [sub_resource type="Animation" id="Animation_oj4bw"]
 length = 0.001
 tracks/0/type = "value"
@@ -146,6 +131,141 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector3(0, 0, -353.545)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tren entrando y saliendo:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_e7w78"]
+resource_name = "arrive_station"
+length = 45.0
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("subte:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10, 22, 32, 45),
+"transitions": PackedFloat32Array(0.353554, 8.28212, 2.82843, 2, 2),
+"update": 0,
+"values": [Vector3(0, 0, -353.545), Vector3(0, 0, 45.9984), Vector3(0, 0, 45.9984), Vector3(0, 0, 430.081), Vector3(0, 0, 430.081)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("subte")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(11, 19),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"subway_open_doors"
+}, {
+"args": [],
+"method": &"subway_close_doors"
+}]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("subte/audio_vagon_1")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}],
+"times": PackedFloat32Array(10, 18)
+}
+tracks/2/use_blend = true
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("subte/audio_vagon_2")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}],
+"times": PackedFloat32Array(10, 18)
+}
+tracks/3/use_blend = true
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("subte/audio_vagon_3")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("16_qcbuj")
+}],
+"times": PackedFloat32Array(10, 18)
+}
+tracks/4/use_blend = true
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("tren entrando y saliendo")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 5.91967,
+"start_offset": 3.99708,
+"stream": ExtResource("17_opdc0")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("18_hrnbe")
+}],
+"times": PackedFloat32Array(1, 22)
+}
+tracks/5/use_blend = true
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("tren entrando y saliendo:volume_db")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 3, 11, 17, 23, 28.7335, 45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-80.0, 0.0, 0.0, -80.0, 0.0, 0.0, -80.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ww2x6"]
@@ -161,7 +281,7 @@ script = ExtResource("1_6j0nq")
 
 [node name="estacion_pasco" parent="escenario" instance=ExtResource("1_qelwn")]
 
-[node name="TECHOS" parent="escenario/estacion_pasco/MESHES" index="13"]
+[node name="Cylinder_array_001" parent="escenario/estacion_pasco" index="96"]
 visible = false
 
 [node name="estacion_colliders" type="Node3D" parent="escenario/estacion_pasco"]
@@ -335,9 +455,20 @@ script = ExtResource("15_ik7jo")
 [node name="subte" parent="tren_del_anden" instance=ExtResource("8_qctvt")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -353.545)
 
+[node name="audio_vagon_1" type="AudioStreamPlayer3D" parent="tren_del_anden/subte"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5865e-06, 3.30924, 18.1473)
+
+[node name="audio_vagon_2" type="AudioStreamPlayer3D" parent="tren_del_anden/subte"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.74221e-06, 3.30924, 54.2444)
+
+[node name="audio_vagon_3" type="AudioStreamPlayer3D" parent="tren_del_anden/subte"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30855e-06, 3.30924, 72.1612)
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="tren_del_anden"]
 libraries = {
 "": SubResource("AnimationLibrary_ww2x6")
 }
+
+[node name="tren entrando y saliendo" type="AudioStreamPlayer" parent="tren_del_anden"]
 
 [editable path="escenario/estacion_pasco"]

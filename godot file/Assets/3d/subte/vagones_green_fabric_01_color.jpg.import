@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bppu5mi8iwgox"
+uid="uid://2i62a3v4dqp5"
 path.s3tc="res://.godot/imported/vagones_green_fabric_01_color.jpg-eada479562276fa2e2c218569f249b01.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_green_fabric_01_color.jpg-eada479562276fa2e2c218569f249b01.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "7063c38607752ba41a13d31999e4699d"
+}
 
 [deps]
 

@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwoc3gwrf3ayd"
+uid="uid://b6dsmv6rsebmg"
 path.s3tc="res://.godot/imported/estacion_pasco_cartel matafuegos.png-47ccb5a7cb9aac9a72c696795871d5f8.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_cartel matafuegos.png-47ccb5a7cb9aac9a72c696795871d5f8.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "721537e2cbf578c5f8d0429195d2ebb4"
+}
 
 [deps]
 

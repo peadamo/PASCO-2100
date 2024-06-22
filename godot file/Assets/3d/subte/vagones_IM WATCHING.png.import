@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dghl8dhc2mwkq"
+uid="uid://dlq20nltpl4b1"
 path.s3tc="res://.godot/imported/vagones_IM WATCHING.png-dc28ddd02915944a6c558ac5f233ed1c.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_IM WATCHING.png-dc28ddd02915944a6c558ac5f233ed1c.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "5d1f5f31b1b35fb81bbcb7b64603143b"
+}
 
 [deps]
 

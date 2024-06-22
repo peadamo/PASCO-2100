@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4ocw66tsx63b"
+uid="uid://tw0jlhfg8a8w"
 path.s3tc="res://.godot/imported/subte_CABINA_2K-casino_carpet_1-diffuse.jpg-4c0d745a5b1102d7db56c4c020f0e537.s3tc.ctex"
 path.etc2="res://.godot/imported/subte_CABINA_2K-casino_carpet_1-diffuse.jpg-4c0d745a5b1102d7db56c4c020f0e537.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "f7f23bce5804374adbdf958763ced6f1"
+}
 
 [deps]
 

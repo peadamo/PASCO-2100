@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb46p2dycmy5n"
+uid="uid://c37ao22vmo8ho"
 path.s3tc="res://.godot/imported/estacion_pasco_riesgo electrico.png-8180d308c20fd7d95edf5ec382a7eac6.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_riesgo electrico.png-8180d308c20fd7d95edf5ec382a7eac6.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "464b7dc3245b4027bce2a326ffc3ecf1"
+}
 
 [deps]
 

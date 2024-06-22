@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b08wvbi5dxo4d"
+uid="uid://csyxfpwq4hw5a"
 path.s3tc="res://.godot/imported/vagones_tiled_plane_DefaultMaterial_BaseColor.jpg-649694d5d6345e1b6c84cf44d4b8cf03.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_tiled_plane_DefaultMaterial_BaseColor.jpg-649694d5d6345e1b6c84cf44d4b8cf03.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "51e68000dbe71939d77887c15eb88f71"
+}
 
 [deps]
 

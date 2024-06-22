@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bad1wruflot87"
+uid="uid://8ugslgntnq5p"
 path.s3tc="res://.godot/imported/base_human_Fabric036_2K_Color.png-284bd34827e294f26ab516c243f193f4.s3tc.ctex"
 path.etc2="res://.godot/imported/base_human_Fabric036_2K_Color.png-284bd34827e294f26ab516c243f193f4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "1483b70b9bec1b3e69a831a4b08a3a38"
+}
 
 [deps]
 

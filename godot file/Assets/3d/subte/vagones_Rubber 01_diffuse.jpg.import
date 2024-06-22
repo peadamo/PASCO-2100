@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjhenr5yato2v"
+uid="uid://ch3np5sgthoh5"
 path.s3tc="res://.godot/imported/vagones_Rubber 01_diffuse.jpg-daa5ce545df891b9e681ab143f5b77e5.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_Rubber 01_diffuse.jpg-daa5ce545df891b9e681ab143f5b77e5.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "7a84b8710188701945c772ebb58f0ac8"
+}
 
 [deps]
 

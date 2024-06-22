@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnec2s7bcloy2"
+uid="uid://c05ovotokoeg3"
 path.s3tc="res://.godot/imported/subte_CABINA_Plastic04_diffuse_xtm.jpg-91ae354899a38d644f002d8d4c7718e4.s3tc.ctex"
 path.etc2="res://.godot/imported/subte_CABINA_Plastic04_diffuse_xtm.jpg-91ae354899a38d644f002d8d4c7718e4.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "4fcec8bc7f9ea02f5e7094fd59e1ae2e"
+}
 
 [deps]
 

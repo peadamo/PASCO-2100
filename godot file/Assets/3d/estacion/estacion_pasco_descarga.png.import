@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwrop4f1xv8ba"
+uid="uid://1uw0e8qocd0i"
 path.s3tc="res://.godot/imported/estacion_pasco_descarga.png-9b22b751e88051b4704b6800bcf714ed.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_descarga.png-9b22b751e88051b4704b6800bcf714ed.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "fc161cd4829666b6b740f814685b7423"
+}
 
 [deps]
 

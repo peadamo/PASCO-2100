@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sarp03i3dg1f"
+uid="uid://blxskmf80jtcg"
 path.s3tc="res://.godot/imported/estacion_pasco_Fence007A_1K-JPG_Color-Fence007A_1K-JPG_Opacity.png-b72675737d745f60c02d59f5dd406ab5.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_Fence007A_1K-JPG_Color-Fence007A_1K-JPG_Opacity.png-b72675737d745f60c02d59f5dd406ab5.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "d84e81d4214d20e31830f917b3b77d59"
+}
 
 [deps]
 

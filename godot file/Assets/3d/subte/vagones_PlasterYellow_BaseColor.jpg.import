@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2mp8lsbgy85l"
+uid="uid://c4vryyedta3xv"
 path.s3tc="res://.godot/imported/vagones_PlasterYellow_BaseColor.jpg-54a503c828ddee1e94c23f52885737ce.s3tc.ctex"
 path.etc2="res://.godot/imported/vagones_PlasterYellow_BaseColor.jpg-54a503c828ddee1e94c23f52885737ce.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "2d5cb73f34bf10eaaa63c67d6663af82"
+}
 
 [deps]
 

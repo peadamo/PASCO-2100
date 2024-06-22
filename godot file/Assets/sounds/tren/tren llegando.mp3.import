@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2mhdqosoajik"
+path="res://.godot/imported/tren llegando.mp3-f6f71c0ae0b94941e7806fd4cf06aea7.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/tren/tren llegando.mp3"
+dest_files=["res://.godot/imported/tren llegando.mp3-f6f71c0ae0b94941e7806fd4cf06aea7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

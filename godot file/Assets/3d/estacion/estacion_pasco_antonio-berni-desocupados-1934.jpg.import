@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn78ua6r8jvpv"
+uid="uid://cvhbunxiqipep"
 path.s3tc="res://.godot/imported/estacion_pasco_antonio-berni-desocupados-1934.jpg-07c8404d87a4ade2305f1f0f8c7ff188.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_antonio-berni-desocupados-1934.jpg-07c8404d87a4ade2305f1f0f8c7ff188.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "78da92ffb0120f31ccb3f8717745eb79"
+}
 
 [deps]
 

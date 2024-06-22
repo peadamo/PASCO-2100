@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cyshrkvorx8d1"
+path="res://.godot/imported/tern entrando.mp3-6e96e052b1eeee683ee2ccdde820e16e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/tren/tern entrando.mp3"
+dest_files=["res://.godot/imported/tern entrando.mp3-6e96e052b1eeee683ee2ccdde820e16e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

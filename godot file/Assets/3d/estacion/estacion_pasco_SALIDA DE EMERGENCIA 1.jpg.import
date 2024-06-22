@@ -2,14 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chqjose6tn6nr"
+uid="uid://c2bc4lfftcgtv"
 path.s3tc="res://.godot/imported/estacion_pasco_SALIDA DE EMERGENCIA 1.jpg-08324f3e6dfd257af47ed96811cad727.s3tc.ctex"
 path.etc2="res://.godot/imported/estacion_pasco_SALIDA DE EMERGENCIA 1.jpg-08324f3e6dfd257af47ed96811cad727.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "454b5b029309e4fee42fcb0255cbcf48"
+}
 
 [deps]
 
