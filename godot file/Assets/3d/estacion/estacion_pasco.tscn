@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2rghjrirors"]
+
+[ext_resource type="PackedScene" uid="uid://c63hm8a2wkw4l" path="res://Assets/3d/estacion/estacion_pasco.glb" id="1_hqgic"]
+
+[node name="estacion_pasco" instance=ExtResource("1_hqgic")]

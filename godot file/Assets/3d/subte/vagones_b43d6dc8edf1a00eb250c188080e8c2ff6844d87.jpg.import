@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c2f2dyh0b415q"
+path.s3tc="res://.godot/imported/vagones_b43d6dc8edf1a00eb250c188080e8c2ff6844d87.jpg-f36f31dcdb15740b4df043e3c1254daf.s3tc.ctex"
+path.etc2="res://.godot/imported/vagones_b43d6dc8edf1a00eb250c188080e8c2ff6844d87.jpg-f36f31dcdb15740b4df043e3c1254daf.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Assets/3d/subte/vagones_b43d6dc8edf1a00eb250c188080e8c2ff6844d87.jpg"
+dest_files=["res://.godot/imported/vagones_b43d6dc8edf1a00eb250c188080e8c2ff6844d87.jpg-f36f31dcdb15740b4df043e3c1254daf.s3tc.ctex", "res://.godot/imported/vagones_b43d6dc8edf1a00eb250c188080e8c2ff6844d87.jpg-f36f31dcdb15740b4df043e3c1254daf.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

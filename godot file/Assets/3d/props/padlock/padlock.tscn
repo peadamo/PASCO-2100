@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl0ekoii3kbxg"]
+
+[ext_resource type="PackedScene" uid="uid://bgo7rek7prjnq" path="res://Assets/3d/props/padlock/padlock.glb" id="1_0ir4b"]
+
+[node name="padlock" instance=ExtResource("1_0ir4b")]

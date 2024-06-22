@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx3s2f1kg1r7p"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="5_7clys"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bincg"]
+radius = 0.255171
+height = 1.79358
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("5_7clys")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.907375, 0)
+shape = SubResource("CapsuleShape3D_bincg")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08537, 0)
+
+[node name="head_camera" type="Node3D" parent="head"]
+
+[node name="Camera3D" type="Camera3D" parent="head/head_camera"]
+current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="head/head_camera"]
+target_position = Vector3(0, 0, -30)
+collision_mask = 0
+collide_with_areas = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="head/head_camera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0678766, -0.177933, 0)
+visible = false
+light_energy = 6.508
+distance_fade_enabled = true
+spot_range = 180.138
+spot_attenuation = 2.07053
+spot_angle = 56.0163
+spot_angle_attenuation = 3.73213
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="fps" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
