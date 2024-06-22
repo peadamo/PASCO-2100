@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bylleynve2flp"]
+[gd_scene load_steps=24 format=3 uid="uid://bylleynve2flp"]
 
 [ext_resource type="Script" path="res://game/game.gd" id="1_6j0nq"]
 [ext_resource type="PackedScene" uid="uid://b2rghjrirors" path="res://Assets/3d/estacion/estacion_pasco.tscn" id="1_qelwn"]
@@ -113,6 +113,45 @@ point_count = 7
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_mk6yx"]
 radius = 0.51029
+
+[sub_resource type="Animation" id="Animation_e7w78"]
+resource_name = "arrive_station"
+length = 30.0
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("subte:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10, 20, 30),
+"transitions": PackedFloat32Array(0.5, 8.28212, 2.82843, 2),
+"update": 0,
+"values": [Vector3(0, 0, -353.545), Vector3(0, 0, 45.9984), Vector3(0, 0, 45.9984), Vector3(0, 0, 430.081)]
+}
+
+[sub_resource type="Animation" id="Animation_oj4bw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("subte:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -353.545)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ww2x6"]
+_data = {
+"RESET": SubResource("Animation_oj4bw"),
+"arrive_station": SubResource("Animation_e7w78")
+}
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_6j0nq")
@@ -245,10 +284,6 @@ transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 4.9816
 [node name="Player" parent="." instance=ExtResource("2_dtanv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.58821, 17.3211, 0)
 
-[node name="Subte3" parent="." instance=ExtResource("8_qctvt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.317778, 0, -22.116)
-visible = false
-
 [node name="tren_mano_contraia" type="Node3D" parent="."]
 script = ExtResource("8_ochqm")
 
@@ -292,5 +327,15 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MONSTERS/JASON/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.916843, 0)
 shape = SubResource("SphereShape3D_mk6yx")
+
+[node name="tren_del_anden" type="Node3D" parent="."]
+
+[node name="subte" parent="tren_del_anden" instance=ExtResource("8_qctvt")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -353.545)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="tren_del_anden"]
+libraries = {
+"": SubResource("AnimationLibrary_ww2x6")
+}
 
 [editable path="escenario/estacion_pasco"]
