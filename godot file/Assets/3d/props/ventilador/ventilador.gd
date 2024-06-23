@@ -13,4 +13,7 @@ func _on_area_3d_body_entered(body):
 	print("kill player")
 	get_parent().carteles_ventiladores.visible=true
 	queue_free()
-	player.death_by_ventilator()
+	
+	var player = get_tree().current_scene.player
+	if player!=null:
+		player.death_by_ventilator()

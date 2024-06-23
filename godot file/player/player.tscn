@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cx3s2f1kg1r7p"]
+[gd_scene load_steps=22 format=3 uid="uid://cx3s2f1kg1r7p"]
 
 [ext_resource type="AudioStream" uid="uid://bx36of2l3nd3k" path="res://Assets/sounds/human-impact-on-ground-6982.mp3" id="2_wxwjf"]
 [ext_resource type="AudioStream" uid="uid://dwww8rne3bnhm" path="res://Assets/sounds/fan_fall.mp3" id="3_5rgue"]
@@ -2203,118 +2203,6 @@ bind/705/name = &"thigh_ik_target.R"
 bind/705/bone = -1
 bind/705/pose = Transform3D(0.861781, 0.0205148, 0.506866, 0.506866, -0.0752299, -0.858736, 0.0205147, 0.996955, -0.0752299, 0.214291, 2.03144, -1.01832)
 
-[sub_resource type="Animation" id="Animation_ewrw2"]
-resource_name = "death_by_ventilator"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("head:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(0.5, 1),
-"update": 0,
-"values": [Vector3(0, 2.08537, 0), Vector3(0, 0.513735, -0.0659871)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("head/head_camera:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("head:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 1.309)]
-}
-tracks/3/type = "audio"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("2_wxwjf")
-}, {
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("3_5rgue")
-}],
-"times": PackedFloat32Array(0.6, 1.1)
-}
-tracks/3/use_blend = true
-tracks/4/type = "method"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(2.2, 5),
-"transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"lunch_death_GUI"
-}, {
-"args": [],
-"method": &"go_to_main"
-}]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("ventilador:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.8, 1.2, 1.3, 1.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 4.09612, -1.83167), Vector3(0, 0.5116, -1.95097), Vector3(0.100553, 0.741001, -2.11786), Vector3(0.100553, 0.357027, -2.11786)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("ventilador:rotation")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0.8, 1.2, 1.3, 1.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.249966, -0.0645381, 0.255547), Vector3(-0.528357, -0.529514, 1.91771)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("ventilador:visible")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-
 [sub_resource type="Animation" id="Animation_16kda"]
 length = 0.001
 tracks/0/type = "value"
@@ -2449,6 +2337,223 @@ tracks/10/keys = {
 "values": [true]
 }
 
+[sub_resource type="Animation" id="Animation_7farm"]
+resource_name = "cabezas_comen"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 2.08537, 0), Vector3(0, 0.274615, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.7, 0.9, 1, 1.2, 1.4, 1.6, 1.7, 1.9, 2.1, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3, 5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"lunch_death_GUI"
+}, {
+"args": [],
+"method": &"go_to_main"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ewrw2"]
+resource_name = "death_by_ventilator"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0, 2.08537, 0), Vector3(0, 0.513735, -0.0659871)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("head/head_camera:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 1.309)]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_wxwjf")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("3_5rgue")
+}],
+"times": PackedFloat32Array(0.6, 1.1)
+}
+tracks/3/use_blend = true
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2.2, 5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"lunch_death_GUI"
+}, {
+"args": [],
+"method": &"go_to_main"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ventilador:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 1.3, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 4.09612, -1.83167), Vector3(0, 0.5116, -1.95097), Vector3(0.100553, 0.741001, -2.11786), Vector3(0.100553, 0.357027, -2.11786)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ventilador:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.8, 1.2, 1.3, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-0.249966, -0.0645381, 0.255547), Vector3(-0.528357, -0.529514, 1.91771)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ventilador:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_1fd6d"]
+resource_name = "hit_by_a_train"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 2.08537, 0), Vector3(0, 0.274615, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.7, 0.9, 1, 1.2, 1.4, 1.6, 1.7, 1.9, 2.1, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3, 5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"lunch_death_GUI"
+}, {
+"args": [],
+"method": &"go_to_main"
+}]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("8_btpvt")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/3/use_blend = true
+
 [sub_resource type="Animation" id="Animation_koo5a"]
 resource_name = "muerte_por_reja"
 length = 5.0
@@ -2556,69 +2661,10 @@ tracks/7/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_1fd6d"]
-resource_name = "hit_by_a_train"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("head:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 2.08537, 0), Vector3(0, 0.274615, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("head:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.5, 0.7, 0.9, 1, 1.2, 1.4, 1.6, 1.7, 1.9, 2.1, 2.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042), Vector3(0.541104, 1.17789e-08, -1.91641), Vector3(-0.743198, 1.27083, -1.28431), Vector3(-0.228141, -0.585147, -2.94217), Vector3(1.069, 1.10993, -1.44042)]
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(3, 5),
-"transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [],
-"method": &"lunch_death_GUI"
-}, {
-"args": [],
-"method": &"go_to_main"
-}]
-}
-tracks/3/type = "audio"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("8_btpvt")
-}],
-"times": PackedFloat32Array(0)
-}
-tracks/3/use_blend = true
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g651j"]
 _data = {
 "RESET": SubResource("Animation_16kda"),
+"cabezas_comen": SubResource("Animation_7farm"),
 "death_by_ventilator": SubResource("Animation_ewrw2"),
 "hit_by_a_train": SubResource("Animation_1fd6d"),
 "muerte_por_reja": SubResource("Animation_koo5a")
@@ -2677,6 +2723,7 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="fps2" type="Label" parent="Control"]
+visible = false
 layout_mode = 0
 offset_left = 3.0
 offset_top = 32.0

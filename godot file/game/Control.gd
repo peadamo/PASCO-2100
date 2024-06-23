@@ -1,5 +1,5 @@
 extends Control
-
+@export var player:CharacterBody3D
 @onready var button_start = $VBoxContainer/button_start
 
 @onready var audio_stream_player_2d = $VBoxContainer/AudioStreamPlayer2D
@@ -32,13 +32,23 @@ func _on_button_exit_mouse_entered():
 	
 	pass # Replace with function body.
 
-
+const PLAYER = preload("res://player/player.tscn")
 func _on_button_start_pressed():
-	$"../Player".can_move=true
-	$"../Player".reset_pos()
+	$"..".add_child(PLAYER.instantiate())
+	var new_player = $"..".get_child(-1)
+	$"..".player=new_player
+	new_player.global_position=$"../player_spawn_pos".global_position
+	
+	if $"..".prev_player == null:
+		$"..".prev_player=new_player
+	else:
+		$"..".prev_player.queue_free()
+		$"..".prev_player=new_player
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$".".visible=false
+	get_tree().paused = false
 	pass # Replace with function body.
 	
 	
@@ -60,3 +70,18 @@ func _on_button_start_pressed():
 
 
 
+
+
+func _on_button_exit_pressed():
+	get_tree().quit()
+	pass # Replace with function body.
+
+
+func _on_button_credits_pressed():
+	$credits.visible=true
+
+
+func _on_button_pressed():
+	$credits.visible=false
+	
+	pass # Replace with function body.

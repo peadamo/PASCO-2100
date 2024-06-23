@@ -21,7 +21,7 @@ size = Vector3(29.4391, 89.4961, 922.056)
 size = Vector3(36.1204, 89.4961, 480.136)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xb2s3"]
-size = Vector3(61.0546, 77.8565, 110.784)
+size = Vector3(61.0546, 77.8565, 52.9428)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0ljbi"]
 size = Vector3(0.461487, 7.15516, 6.44219)
@@ -90,7 +90,6 @@ lod_bias = 0.2
 lod_bias = 0.2
 
 [node name="Cube_028" parent="." index="15"]
-visible = false
 lod_bias = 0.2
 
 [node name="Cube_031" parent="." index="16"]
@@ -172,7 +171,6 @@ lod_bias = 0.2
 lod_bias = 0.2
 
 [node name="luz tubo anden" parent="." index="42"]
-visible = false
 lod_bias = 0.2
 
 [node name="luz tubo anden casi via" parent="." index="43"]
@@ -185,7 +183,6 @@ lod_bias = 0.2
 lod_bias = 0.2
 
 [node name="piso_017" parent="." index="46"]
-visible = false
 lod_bias = 0.2
 
 [node name="Cube_005" parent="." index="47"]
@@ -336,7 +333,6 @@ lod_bias = 0.2
 lod_bias = 0.2
 
 [node name="Cylinder_array_001" parent="." index="96"]
-visible = false
 lod_bias = 0.2
 
 [node name="piso_016" parent="." index="97"]
@@ -444,52 +440,42 @@ lod_bias = 0.2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="colliders/StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50859, -1.00403, -19.2295)
-visible = false
 shape = SubResource("BoxShape3D_e67rh")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="colliders/StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5139, -13.6024, -19.2295)
-visible = false
 shape = SubResource("BoxShape3D_22bbh")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="colliders/StaticBody3D" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.4899, -25.9976, -59.5988)
-visible = false
 shape = SubResource("BoxShape3D_0byhw")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="colliders/StaticBody3D" index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.4899, -25.9976, 63.4669)
-visible = false
 shape = SubResource("BoxShape3D_1my1o")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="colliders/StaticBody3D" index="4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6562, -20.1778, 67.0236)
-visible = false
 shape = SubResource("BoxShape3D_57wtq")
 
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="colliders/StaticBody3D" index="5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, -20.1778, 67.0236)
-visible = false
 shape = SubResource("BoxShape3D_57wtq")
 
 [node name="CollisionShape3D9" type="CollisionShape3D" parent="colliders/StaticBody3D" index="6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4433, -20.1778, 288.841)
-visible = false
 shape = SubResource("BoxShape3D_2qn0h")
 
 [node name="CollisionShape3D10" type="CollisionShape3D" parent="colliders/StaticBody3D" index="7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4433, -20.1778, -289.153)
-visible = false
 shape = SubResource("BoxShape3D_2qn0h")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="colliders/StaticBody3D" index="8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59111, -8.7528, -363.79)
-visible = false
 shape = SubResource("BoxShape3D_xb2s3")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="colliders/StaticBody3D" index="9"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59111, -8.7528, 336.68)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59111, -8.7528, 365.601)
 shape = SubResource("BoxShape3D_xb2s3")
 
 [node name="reja4" type="CollisionShape3D" parent="colliders/StaticBody3D" index="10"]
@@ -602,3 +588,11 @@ shape = SubResource("CylinderShape3D_cqm8l")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 49.2049)
 visible = false
 shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="colliders" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.112945, 6.04172, -206.948)
+size = Vector3(17.4785, 1, 314.762)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="colliders" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.112945, 6.04172, 206.233)
+size = Vector3(17.4785, 1, 313.878)

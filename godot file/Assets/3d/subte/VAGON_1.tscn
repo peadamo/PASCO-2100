@@ -662,9 +662,5 @@ shape = SubResource("BoxShape3D_l8hjx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23022, 2.23492, 6.3504)
 shape = SubResource("BoxShape3D_l8hjx")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." index="12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.34621, 0)
-omni_range = 1.86719
-
 [editable path="sitted_people"]
 [editable path="sitted_people2"]

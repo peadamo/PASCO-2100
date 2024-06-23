@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mll3yc2mld08"
+path="res://.godot/imported/cabeza corren.mp3-8dc588a949b26d6944e988ddba011174.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/cabeza corren.mp3"
+dest_files=["res://.godot/imported/cabeza corren.mp3-8dc588a949b26d6944e988ddba011174.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

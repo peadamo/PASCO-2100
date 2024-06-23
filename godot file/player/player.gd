@@ -1,29 +1,45 @@
 extends Node
+@export var world :Node3D
 @onready var head = $head
 @onready var head_camera = $head/head_camera
 @onready var player = $"."
 @onready var camera_3d = $head/head_camera/Camera3D
+var prev_player = null
 
-var can_move = false
+var can_move = true
 var gravity = 10.0
 var speed = 5
 var jump_velocity = 5
 var mouse_sensitivity=0.002
 
+var gui_rewards:Control
+var gui_main:Control
+		
 func _ready():
+	print(get_tree().current_scene.gui_rewards)
+	gui_rewards=get_tree().current_scene.gui_rewards
+	gui_main=get_tree().current_scene.gui_main
+	
+	
 	$"head/head_camera/Camera3D/pies reja".visible=false
 	$ventilador.visible=false
 	
 
 func reset_pos():
-	player.position = Vector3(8.071,1.013,6.156)
+
+	player.global_position = Vector3(8.071,1.013,6.156)
 	player.rotation = Vector3.ZERO
 	head.position = Vector3(0,2.085,0)
-	head.rotation = Vector3.ZERO
+	head.rotation = Vector3(0,deg_to_rad(0),0)
 	head_camera.position = Vector3.ZERO
 	head_camera.rotation = Vector3.ZERO
 	camera_3d.position = Vector3.ZERO
 	camera_3d.rotation = Vector3.ZERO
+	
+	#head.global_rotation = Vector3.ZERO
+	#head_camera.global_rotation = Vector3.ZERO
+	#camera_3d.global_rotation = Vector3.ZERO
+	
 
 
 
@@ -69,9 +85,7 @@ func _physics_process(delta):
 	player.move_and_slide()
 		
 		
-@export var gui_rewards:Control
-@export var gui_main:Control
-		
+
 		
 		
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -121,6 +135,16 @@ func death_by_train():
 	ending_logo=TRAIN
 	gui_main.button_start.text = "REPLAY"
 	gui_main.reward_9.visible=true
+const HUMAN = preload("res://gui/human.png")	
+func death_by_cabezas_feas():
+	can_move=false
+	animation_player.play("cabezas_comen")
+	ENDINGS.ending_01 = true
+	ending_description="EAT Tunnel Lurkers"
+	ending_number="1"
+	ending_logo=HUMAN
+	gui_main.button_start.text = "REPLAY"
+	gui_main.reward_1.visible=true
 	
 	
 func lunch_death_GUI():
