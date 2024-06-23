@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://byag3ldn45pmq" path="res://Assets/3d/props/banco/banco.glb" id="1_j215m"]
 
 [node name="banco2" instance=ExtResource("1_j215m")]
+
+[node name="banco" parent="." index="0"]
+lod_bias = 0.2

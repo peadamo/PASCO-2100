@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://cgc5ahyrwwixw" path="res://Assets/3d/props/tachos basura/tachos.glb" id="1_gaklo"]
 
 [node name="tachos" instance=ExtResource("1_gaklo")]
+
+[node name="Cylinder_003" parent="." index="0"]
+lod_bias = 0.5

@@ -1,8 +1,6 @@
 extends Node3D
 
 
-
-
 func _on_area_3d_area_entered(area):
 	area.get_parent().visible=true
 	pass # Replace with function body.
@@ -27,3 +25,16 @@ func subway_close_doors():
 	$vagones3.close_the_doors()
 	$vagones4.close_the_doors()
 	$vagones5.close_the_doors()
+
+
+func _on_muerte_atropellado_body_entered(body):
+	body.death_by_train()
+	pass # Replace with function body.
+
+
+func _on_area_3d_body_entered(body):
+	body.reparent($".")
+	pass # Replace with function body.
+
+
+	

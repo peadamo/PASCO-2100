@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://47c8ip52n2pu" path="res://Assets/3d/subte/CABINA/subte_CABINA.glb" id="1_v0qv0"]
 
 [node name="subte_CABINA" instance=ExtResource("1_v0qv0")]
+
+[node name="puerta_derecha" parent="." index="0"]
+lod_bias = 0.2

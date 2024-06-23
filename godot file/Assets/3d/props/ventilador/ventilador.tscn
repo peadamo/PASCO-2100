@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://qtcudwjpe1cf"]
+[gd_scene load_steps=8 format=3 uid="uid://qtcudwjpe1cf"]
 
 [ext_resource type="PackedScene" uid="uid://hl62vyyusisb" path="res://Assets/3d/props/ventilador/ventilador.glb" id="1_3e6mn"]
 [ext_resource type="Script" path="res://Assets/3d/props/ventilador/ventilador.gd" id="2_3ipv3"]
@@ -42,8 +42,26 @@ _data = {
 "on": SubResource("Animation_71fkw")
 }
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_ug3tv"]
+radius = 1.0
+
 [node name="ventilador" instance=ExtResource("1_3e6mn")]
 script = ExtResource("2_3ipv3")
+
+[node name="ventilador" parent="." index="0"]
+lod_bias = 0.3
+
+[node name="heclices_ventilador_002" parent="ventilador" index="0"]
+lod_bias = 0.3
+
+[node name="Cylinder" parent="ventilador/heclices_ventilador_002" index="0"]
+lod_bias = 0.3
+
+[node name="heclices_ventilador" parent="ventilador/heclices_ventilador_002" index="1"]
+lod_bias = 0.3
+
+[node name="heclices_ventilador_001" parent="ventilador/heclices_ventilador_002" index="2"]
+lod_bias = 0.3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
@@ -55,3 +73,13 @@ stream = ExtResource("3_l478k")
 volume_db = -29.474
 autoplay = true
 max_distance = 30.0
+
+[node name="Area3D" type="Area3D" parent="." index="3"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.333436, 0)
+shape = SubResource("SphereShape3D_ug3tv")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

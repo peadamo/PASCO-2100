@@ -3,3 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://bgo7rek7prjnq" path="res://Assets/3d/props/padlock/padlock.glb" id="1_0ir4b"]
 
 [node name="padlock" instance=ExtResource("1_0ir4b")]
+
+[node name="defaultMaterial" parent="." index="0"]
+lod_bias = 0.001
+
+[node name="defaultMaterial_001" parent="defaultMaterial" index="0"]
+lod_bias = 0.001

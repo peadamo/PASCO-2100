@@ -1,5 +1,604 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2rghjrirors"]
+[gd_scene load_steps=15 format=3 uid="uid://b2rghjrirors"]
 
 [ext_resource type="PackedScene" uid="uid://c63hm8a2wkw4l" path="res://Assets/3d/estacion/estacion_pasco.glb" id="1_hqgic"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_e67rh"]
+size = Vector3(93.3865, 2.03198, 796.455)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_22bbh"]
+size = Vector3(65.0067, 29.231, 796.455)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0byhw"]
+size = Vector3(61.0546, 77.8565, 104.699)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1my1o"]
+size = Vector3(61.0546, 77.8565, 110.784)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_57wtq"]
+size = Vector3(29.4391, 89.4961, 922.056)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2qn0h"]
+size = Vector3(36.1204, 89.4961, 480.136)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xb2s3"]
+size = Vector3(61.0546, 77.8565, 110.784)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ljbi"]
+size = Vector3(0.461487, 7.15516, 6.44219)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_43sk6"]
+size = Vector3(0.18428, 7.15516, 2.02858)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6mu7"]
+size = Vector3(0.461487, 7.22829, 9.08849)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cwjof"]
+size = Vector3(2.2682, 14.0811, 0.474592)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0l0om"]
+size = Vector3(2.95064, 14.0811, 0.130851)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cqm8l"]
+height = 29.4471
+radius = 0.267245
+
 [node name="estacion_pasco" instance=ExtResource("1_hqgic")]
+
+[node name="durmiente_001" parent="." index="0"]
+lod_bias = 0.2
+
+[node name="pared" parent="." index="1"]
+lod_bias = 0.2
+
+[node name="PUERTA DE EMERGENCIA" parent="." index="2"]
+lod_bias = 0.2
+
+[node name="piso_002" parent="." index="3"]
+lod_bias = 0.2
+
+[node name="Cylinder_002" parent="." index="4"]
+lod_bias = 0.2
+
+[node name="Cylinder_005" parent="." index="5"]
+lod_bias = 0.2
+
+[node name="Cylinder_006" parent="." index="6"]
+lod_bias = 0.2
+
+[node name="pared_002" parent="." index="7"]
+lod_bias = 0.2
+
+[node name="Cube_001" parent="." index="8"]
+lod_bias = 0.2
+
+[node name="Cube_009" parent="." index="9"]
+lod_bias = 0.2
+
+[node name="Cube_017" parent="." index="10"]
+lod_bias = 0.2
+
+[node name="Cylinder" parent="." index="11"]
+lod_bias = 0.2
+
+[node name="Cylinder_004" parent="." index="12"]
+lod_bias = 0.2
+
+[node name="Cylinder_007" parent="." index="13"]
+lod_bias = 0.2
+
+[node name="Cylinder_008" parent="." index="14"]
+lod_bias = 0.2
+
+[node name="Cube_028" parent="." index="15"]
+visible = false
+lod_bias = 0.2
+
+[node name="Cube_031" parent="." index="16"]
+lod_bias = 0.2
+
+[node name="boca hidrante_001" parent="." index="17"]
+lod_bias = 0.2
+
+[node name="boca hidrante_002" parent="." index="18"]
+lod_bias = 0.2
+
+[node name="columnas_array" parent="." index="19"]
+lod_bias = 0.2
+
+[node name="Cube_002" parent="." index="20"]
+lod_bias = 0.2
+
+[node name="Cube_003" parent="." index="21"]
+lod_bias = 0.2
+
+[node name="Cube_004" parent="." index="22"]
+lod_bias = 0.2
+
+[node name="durmiente" parent="." index="23"]
+lod_bias = 0.2
+
+[node name="huecos_pared" parent="." index="24"]
+lod_bias = 0.2
+
+[node name="huecos_pared_001" parent="." index="25"]
+lod_bias = 0.2
+
+[node name="huecos_pared_002" parent="." index="26"]
+lod_bias = 0.2
+
+[node name="huecos_pared_003" parent="." index="27"]
+lod_bias = 0.2
+
+[node name="huecos_pared_004" parent="." index="28"]
+lod_bias = 0.2
+
+[node name="huecos_pared_005" parent="." index="29"]
+lod_bias = 0.2
+
+[node name="huecos_pared_006" parent="." index="30"]
+lod_bias = 0.2
+
+[node name="huecos_pared_007" parent="." index="31"]
+lod_bias = 0.2
+
+[node name="huecos_pared_008" parent="." index="32"]
+lod_bias = 0.2
+
+[node name="huecos_pared_009" parent="." index="33"]
+lod_bias = 0.2
+
+[node name="huecos_pared_010" parent="." index="34"]
+lod_bias = 0.2
+
+[node name="huecos_pared_012" parent="." index="35"]
+lod_bias = 0.2
+
+[node name="huecos_pared_013" parent="." index="36"]
+lod_bias = 0.2
+
+[node name="huecos_pared_014" parent="." index="37"]
+lod_bias = 0.2
+
+[node name="huecos_pared_015" parent="." index="38"]
+lod_bias = 0.2
+
+[node name="huecos_pared_016" parent="." index="39"]
+lod_bias = 0.2
+
+[node name="huecos_pared_017" parent="." index="40"]
+lod_bias = 0.2
+
+[node name="huecos_pared_018" parent="." index="41"]
+lod_bias = 0.2
+
+[node name="luz tubo anden" parent="." index="42"]
+visible = false
+lod_bias = 0.2
+
+[node name="luz tubo anden casi via" parent="." index="43"]
+lod_bias = 0.2
+
+[node name="piso_011" parent="." index="44"]
+lod_bias = 0.2
+
+[node name="piso_012" parent="." index="45"]
+lod_bias = 0.2
+
+[node name="piso_017" parent="." index="46"]
+visible = false
+lod_bias = 0.2
+
+[node name="Cube_005" parent="." index="47"]
+lod_bias = 0.2
+
+[node name="Cube_006" parent="." index="48"]
+lod_bias = 0.2
+
+[node name="sujeta bandeja cables" parent="." index="49"]
+lod_bias = 0.2
+
+[node name="sujeta bandeja cables_001" parent="." index="50"]
+lod_bias = 0.2
+
+[node name="puerta" parent="." index="51"]
+lod_bias = 0.2
+
+[node name="Cube_010" parent="." index="52"]
+lod_bias = 0.2
+
+[node name="baldosa piso ciegos" parent="." index="53"]
+lod_bias = 0.2
+
+[node name="piso_001" parent="." index="54"]
+lod_bias = 0.2
+
+[node name="PISO BALDOSA NO BORRAR" parent="." index="55"]
+lod_bias = 0.2
+
+[node name="piso_019" parent="." index="56"]
+lod_bias = 0.2
+
+[node name="piso_020" parent="." index="57"]
+lod_bias = 0.2
+
+[node name="puerta_001" parent="." index="58"]
+lod_bias = 0.2
+
+[node name="columna_lateral subte" parent="." index="59"]
+lod_bias = 0.2
+
+[node name="Cube_007" parent="." index="60"]
+lod_bias = 0.2
+
+[node name="Cube_008" parent="." index="61"]
+lod_bias = 0.2
+
+[node name="Cube_015" parent="." index="62"]
+lod_bias = 0.2
+
+[node name="huecos_pared_021" parent="." index="63"]
+lod_bias = 0.2
+
+[node name="huecos_pared_022" parent="." index="64"]
+lod_bias = 0.2
+
+[node name="huecos_pared_023" parent="." index="65"]
+lod_bias = 0.2
+
+[node name="huecos_pared_024" parent="." index="66"]
+lod_bias = 0.2
+
+[node name="huecos_pared_025" parent="." index="67"]
+lod_bias = 0.2
+
+[node name="huecos_pared_026" parent="." index="68"]
+lod_bias = 0.2
+
+[node name="huecos_pared_027" parent="." index="69"]
+lod_bias = 0.2
+
+[node name="huecos_pared_028" parent="." index="70"]
+lod_bias = 0.2
+
+[node name="huecos_pared_029" parent="." index="71"]
+lod_bias = 0.2
+
+[node name="huecos_pared_030" parent="." index="72"]
+lod_bias = 0.2
+
+[node name="huecos_pared_031" parent="." index="73"]
+lod_bias = 0.2
+
+[node name="huecos_pared_032" parent="." index="74"]
+lod_bias = 0.2
+
+[node name="huecos_pared_033" parent="." index="75"]
+lod_bias = 0.2
+
+[node name="huecos_pared_034" parent="." index="76"]
+lod_bias = 0.2
+
+[node name="huecos_pared_035" parent="." index="77"]
+lod_bias = 0.2
+
+[node name="huecos_pared_036" parent="." index="78"]
+lod_bias = 0.2
+
+[node name="huecos_pared_037" parent="." index="79"]
+lod_bias = 0.2
+
+[node name="huecos_pared_038" parent="." index="80"]
+lod_bias = 0.2
+
+[node name="pared contra_anden" parent="." index="81"]
+lod_bias = 0.2
+
+[node name="huecos_pared_011" parent="." index="82"]
+lod_bias = 0.2
+
+[node name="columnas_array_002" parent="." index="83"]
+lod_bias = 0.2
+
+[node name="Cylinder_001" parent="." index="84"]
+lod_bias = 0.2
+
+[node name="Cylinder_003" parent="." index="85"]
+lod_bias = 0.2
+
+[node name="columnas_array_001" parent="." index="86"]
+lod_bias = 0.2
+
+[node name="pared_lateral_derecha" parent="." index="87"]
+lod_bias = 0.2
+
+[node name="huecos_pared_020" parent="." index="88"]
+lod_bias = 0.2
+
+[node name="matafuegos" parent="." index="89"]
+lod_bias = 0.2
+
+[node name="matafuegos_001" parent="." index="90"]
+lod_bias = 0.2
+
+[node name="Cube_013" parent="." index="91"]
+lod_bias = 0.2
+
+[node name="Cube_014" parent="." index="92"]
+lod_bias = 0.2
+
+[node name="Cube_016" parent="." index="93"]
+lod_bias = 0.2
+
+[node name="Cylinder_015" parent="." index="94"]
+lod_bias = 0.2
+
+[node name="Cylinder_010" parent="." index="95"]
+lod_bias = 0.2
+
+[node name="Cylinder_array_001" parent="." index="96"]
+visible = false
+lod_bias = 0.2
+
+[node name="piso_016" parent="." index="97"]
+lod_bias = 0.2
+
+[node name="Cube_011" parent="." index="98"]
+lod_bias = 0.2
+
+[node name="Cube_012" parent="." index="99"]
+lod_bias = 0.2
+
+[node name="columnas_array_003" parent="." index="100"]
+lod_bias = 0.2
+
+[node name="huecos_pared_019" parent="." index="101"]
+lod_bias = 0.2
+
+[node name="pared_001" parent="." index="102"]
+lod_bias = 0.2
+
+[node name="Cube_018" parent="." index="103"]
+lod_bias = 0.2
+
+[node name="Cube_019" parent="." index="104"]
+lod_bias = 0.2
+
+[node name="Cube_021" parent="." index="105"]
+lod_bias = 0.2
+
+[node name="Cube_020" parent="." index="106"]
+lod_bias = 0.2
+
+[node name="Cube_027" parent="." index="107"]
+lod_bias = 0.2
+
+[node name="Cube_022" parent="." index="108"]
+lod_bias = 0.2
+
+[node name="Cylinder_012" parent="Empty" index="0"]
+lod_bias = 0.2
+
+[node name="Icosphere" parent="Empty" index="1"]
+lod_bias = 0.2
+
+[node name="Cube_023" parent="." index="110"]
+lod_bias = 0.2
+
+[node name="Cylinder_011" parent="Empty_003" index="0"]
+lod_bias = 0.2
+
+[node name="Icosphere_003" parent="Empty_003" index="1"]
+lod_bias = 0.2
+
+[node name="Cube_024" parent="." index="112"]
+lod_bias = 0.2
+
+[node name="Cylinder_013" parent="Empty_004" index="0"]
+lod_bias = 0.2
+
+[node name="Icosphere_004" parent="Empty_004" index="1"]
+lod_bias = 0.2
+
+[node name="Cylinder_009" parent="Empty_002" index="0"]
+lod_bias = 0.2
+
+[node name="Icosphere_001" parent="Empty_002" index="1"]
+lod_bias = 0.2
+
+[node name="Cube_033" parent="." index="115"]
+lod_bias = 0.2
+
+[node name="Cylinder_014" parent="Empty_005" index="0"]
+lod_bias = 0.2
+
+[node name="Icosphere_005" parent="Empty_005" index="1"]
+lod_bias = 0.2
+
+[node name="Cube_025" parent="." index="117"]
+lod_bias = 0.2
+
+[node name="Cube_026" parent="." index="118"]
+lod_bias = 0.2
+
+[node name="Cube_030" parent="." index="119"]
+lod_bias = 0.2
+
+[node name="Cube_029" parent="." index="120"]
+lod_bias = 0.2
+
+[node name="Cube_035" parent="." index="121"]
+lod_bias = 0.2
+
+[node name="Cube_032" parent="." index="122"]
+lod_bias = 0.2
+
+[node name="Cube_034" parent="." index="123"]
+lod_bias = 0.2
+
+[node name="Cube_036" parent="." index="124"]
+lod_bias = 0.2
+
+[node name="colliders" type="Node3D" parent="." index="125"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="colliders" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="colliders/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50859, -1.00403, -19.2295)
+visible = false
+shape = SubResource("BoxShape3D_e67rh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="colliders/StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5139, -13.6024, -19.2295)
+visible = false
+shape = SubResource("BoxShape3D_22bbh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="colliders/StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.4899, -25.9976, -59.5988)
+visible = false
+shape = SubResource("BoxShape3D_0byhw")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="colliders/StaticBody3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.4899, -25.9976, 63.4669)
+visible = false
+shape = SubResource("BoxShape3D_1my1o")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="colliders/StaticBody3D" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6562, -20.1778, 67.0236)
+visible = false
+shape = SubResource("BoxShape3D_57wtq")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="colliders/StaticBody3D" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, -20.1778, 67.0236)
+visible = false
+shape = SubResource("BoxShape3D_57wtq")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="colliders/StaticBody3D" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4433, -20.1778, 288.841)
+visible = false
+shape = SubResource("BoxShape3D_2qn0h")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="colliders/StaticBody3D" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4433, -20.1778, -289.153)
+visible = false
+shape = SubResource("BoxShape3D_2qn0h")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="colliders/StaticBody3D" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59111, -8.7528, -363.79)
+visible = false
+shape = SubResource("BoxShape3D_xb2s3")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="colliders/StaticBody3D" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59111, -8.7528, 336.68)
+visible = false
+shape = SubResource("BoxShape3D_xb2s3")
+
+[node name="reja4" type="CollisionShape3D" parent="colliders/StaticBody3D" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73517, -1.45185, 8.48097)
+shape = SubResource("BoxShape3D_0ljbi")
+
+[node name="reja5" type="CollisionShape3D" parent="colliders/StaticBody3D" index="11"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.95565, -1.45185, 5.25346)
+shape = SubResource("BoxShape3D_43sk6")
+
+[node name="reja6" type="CollisionShape3D" parent="colliders/StaticBody3D" index="12"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.95565, -1.45185, -1.3014)
+shape = SubResource("BoxShape3D_43sk6")
+
+[node name="reja3" type="CollisionShape3D" parent="colliders/StaticBody3D" index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.73517, -1.41529, -8.13482)
+shape = SubResource("BoxShape3D_e6mu7")
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="colliders/StaticBody3D" index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.01899, 1.18115, -3.36373)
+visible = false
+shape = SubResource("BoxShape3D_cwjof")
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="colliders/StaticBody3D" index="15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89381, 1.18115, -2.256)
+visible = false
+shape = SubResource("BoxShape3D_cwjof")
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="colliders/StaticBody3D" index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89381, 1.18115, 1.82889)
+visible = false
+shape = SubResource("BoxShape3D_cwjof")
+
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="colliders/StaticBody3D" index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89381, 1.18115, 3.04889)
+visible = false
+shape = SubResource("BoxShape3D_cwjof")
+
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="colliders/StaticBody3D" index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89381, 1.18115, 4.14728)
+visible = false
+shape = SubResource("BoxShape3D_cwjof")
+
+[node name="puerta" type="CollisionShape3D" parent="colliders/StaticBody3D" index="19"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.74647, 1.18115, 0.204636)
+visible = false
+shape = SubResource("BoxShape3D_0l0om")
+
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="colliders/StaticBody3D" index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -48.5137)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="colliders/StaticBody3D" index="21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -41.0026)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="colliders/StaticBody3D" index="22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -33.4556)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="colliders/StaticBody3D" index="23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -18.4397)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="colliders/StaticBody3D" index="24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -10.9264)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="colliders/StaticBody3D" index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, -3.3722)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="colliders/StaticBody3D" index="26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 4.13482)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="colliders/StaticBody3D" index="27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 11.6401)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="colliders/StaticBody3D" index="28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 19.1784)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="colliders/StaticBody3D" index="29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 26.7168)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="colliders/StaticBody3D" index="30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 34.1943)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="colliders/StaticBody3D" index="31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 41.6996)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")
+
+[node name="CollisionShape3D33" type="CollisionShape3D" parent="colliders/StaticBody3D" index="32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48494, 0, 49.2049)
+visible = false
+shape = SubResource("CylinderShape3D_cqm8l")

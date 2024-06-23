@@ -1,11 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://blilmjdoukblb"]
+[gd_scene load_steps=9 format=3 uid="uid://blilmjdoukblb"]
 
 [ext_resource type="Script" path="res://SUBTE/SUBTE.gd" id="1_y5a8x"]
 [ext_resource type="PackedScene" uid="uid://x3asnl7st6wl" path="res://Assets/3d/subte/CABINA/subte_cabina.tscn" id="1_yjmqx"]
 [ext_resource type="PackedScene" uid="uid://1fx2bwume7l1" path="res://Assets/3d/subte/VAGON_1.tscn" id="2_ufhsf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6w6rw"]
-size = Vector3(3.19031, 4.93408, 85.0492)
+size = Vector3(1.94152, 4.93408, 88.1589)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cqqu7"]
+size = Vector3(2.34778, 5.05713, 2.56348)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1vif7"]
+size = Vector3(2.61334, 1.50861, 88.7751)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q0ces"]
+size = Vector3(2.61334, 5.13724, 3.40107)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_25s8g"]
+size = Vector3(2.61334, 5.13724, 3.37422)
 
 [node name="Subte" type="Node3D"]
 script = ExtResource("1_y5a8x")
@@ -32,11 +44,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 81.114)
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 0
-collision_mask = 2
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0728149, 1.96704, 43.9069)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021137, 1.96704, 45.4617)
 shape = SubResource("BoxShape3D_6w6rw")
+
+[node name="muerte_atropellado" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="muerte_atropellado"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0043335, 2.02856, -0.781738)
+shape = SubResource("BoxShape3D_cqqu7")
+
+[node name="collisiones" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="collisiones"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="collisiones/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000701904, 0.254303, 45.0111)
+shape = SubResource("BoxShape3D_1vif7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="collisiones/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000701904, 2.06862, 90.2876)
+shape = SubResource("BoxShape3D_q0ces")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="collisiones/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000701904, 2.06862, 0.0179458)
+shape = SubResource("BoxShape3D_25s8g")
 
 [connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
 [connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="muerte_atropellado" to="." method="_on_muerte_atropellado_body_entered"]
+
+[editable path="vagones"]
+[editable path="vagones/sitted_people"]
+[editable path="vagones/sitted_people2"]
