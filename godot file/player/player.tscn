@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cx3s2f1kg1r7p"]
+[gd_scene load_steps=23 format=3 uid="uid://cx3s2f1kg1r7p"]
 
 [ext_resource type="AudioStream" uid="uid://bx36of2l3nd3k" path="res://Assets/sounds/human-impact-on-ground-6982.mp3" id="2_wxwjf"]
 [ext_resource type="AudioStream" uid="uid://dwww8rne3bnhm" path="res://Assets/sounds/fan_fall.mp3" id="3_5rgue"]
@@ -2203,6 +2203,9 @@ bind/705/name = &"thigh_ik_target.R"
 bind/705/bone = -1
 bind/705/pose = Transform3D(0.861781, 0.0205148, 0.506866, 0.506866, -0.0752299, -0.858736, 0.0205147, 0.996955, -0.0752299, 0.214291, 2.03144, -1.01832)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_plsit"]
+size = Vector3(0.1, 0.1, 3.47747)
+
 [sub_resource type="Animation" id="Animation_16kda"]
 length = 0.001
 tracks/0/type = "value"
@@ -2695,10 +2698,13 @@ mesh = SubResource("ArrayMesh_g51yf")
 skin = SubResource("Skin_rws5q")
 skeleton = NodePath("")
 
-[node name="RayCast3D" type="RayCast3D" parent="head/head_camera"]
-target_position = Vector3(0, 0, -30)
+[node name="RayCast3D" type="Area3D" parent="head/head_camera"]
+collision_layer = 16
 collision_mask = 0
-collide_with_areas = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="head/head_camera/RayCast3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.68873)
+shape = SubResource("BoxShape3D_plsit")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="head/head_camera"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0678766, -0.177933, 0)

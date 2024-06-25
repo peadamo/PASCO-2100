@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbtrr4ahh34tm"
+path="res://.godot/imported/la nena aparece.mp3-9a60704470b579eae1725734349e811d.mp3str"
+
+[deps]
+
+source_file="res://Assets/la nena negra/la nena aparece.mp3"
+dest_files=["res://.godot/imported/la nena aparece.mp3-9a60704470b579eae1725734349e811d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

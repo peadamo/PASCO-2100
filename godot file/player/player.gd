@@ -146,6 +146,17 @@ func death_by_cabezas_feas():
 	gui_main.button_start.text = "REPLAY"
 	gui_main.reward_1.visible=true
 	
+const FRAME = preload("res://gui/frame.png")	
+func death_by_la_nena_negra():
+	can_move=false
+	animation_player.play("cabezas_comen")
+	ENDINGS.ending_11 = true
+	ending_description="the painting"
+	ending_number="11"
+	ending_logo=FRAME
+	gui_main.button_start.text = "REPLAY"
+	gui_main.reward_11.visible=true
+	
 	
 func lunch_death_GUI():
 	gui_rewards.update(ending_description,ending_number,ending_logo)
